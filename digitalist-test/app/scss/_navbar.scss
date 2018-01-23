@@ -1,0 +1,67 @@
+.nav-wrapper {
+    position: relative;
+    display: flex;
+    flex: 0;
+    align-items: center;
+    height: 5rem;
+    background-color: rgba(0,0,0, .6);
+    opacity: 0.98;
+}
+
+.menu-wrapper {
+  display: none;
+  background: #549a93;
+  max-width: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  opacity: 0.98;
+}
+
+.inner-menu {
+  display: flex;
+  flex-direction: column;
+  height: 27vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  @include mq($until:mobileLandscape) {
+    height: 60vh;
+    margin-top: 3rem;
+  }
+  @include mq($from: mobileLandscape, $until:tablet) {
+    height: 43vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  @include mq($from: tablet, $until:desktop) {
+    height: 65vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  @include mq($from: desktop, $until:wide) {
+    height: 36vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.menu-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 30px;
+  width: 100%;
+  background-color: #549a93;
+  @include mq($until:mobileLandscape) {
+    font-size: 25px;
+  }
+  @include mq($from: mobileLandscape, $until:tablet) {
+    font-size: 25px;
+  }
+}
