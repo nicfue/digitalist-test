@@ -225,7 +225,6 @@ p {
         @include mq($until: mobileLandscape) {
         margin: auto;
         margin-top: 3rem;
-        // margin-bottom: 3rem;
         };
         @include mq($from: mobileLandscape, $until: wide) {
           margin: 45px;
