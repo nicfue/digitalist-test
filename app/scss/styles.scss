@@ -48,7 +48,7 @@ p {
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 780px;
   @include mq($until: mobileLandscape) {
     background-image: url(../images/hero-bg-mobile.png);
